@@ -2,26 +2,18 @@ name: tests
 on: [push, pull_request]
   
 jobs:
-  test:
-    continue-on-error: true
-    runs-on: ubuntu-latest
-    steps:
-      - name: Set up Environnement
-        uses: BertSa/ActionJavaTest@v1
-      - name: Run tests with Maven
-        run: mvn -B test --file backend/pom.xml
   coverage:
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
-      with:
-        java-version: 11
+        with:
+          java-version: 11
       - uses: actions/cache@v2
-      with:
-        path: ~/.m2
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-        restore-keys: ${{ runner.os }}-m2 
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2 
       - name: Run tests with Maven
         run: mvn clean verify --file backend/pom.xml
