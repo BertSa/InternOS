@@ -182,8 +182,8 @@
                                 <rule>
                                     <element>PACKAGE</element>
                                     <includes>
-                                        <include>com.gestionnaire_de_stage.controller.*</include>
-                                        <include>com.gestionnaire_de_stage.service.*</include>
+                                        <include>ca.bertsa.internos.controller.*</include>
+                                        <include>ca.bertsa.internos.service.*</include>
                                     </includes>
                                     <limits>
                                         <limit>
