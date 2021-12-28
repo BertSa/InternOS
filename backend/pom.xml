@@ -8,10 +8,10 @@
         <version>2.5.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com</groupId>
-    <artifactId>Gestionnaire_De_Stage</artifactId>
+    <groupId>ca.bertsa</groupId>
+    <artifactId>internos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Gestionnaire_De_Stage</name>
+    <name>InternOS</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
