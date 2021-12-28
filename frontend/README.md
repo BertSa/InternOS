@@ -1,3 +1,3 @@
 # FrontEnd
 
-Partie frontend du projet de l'équipe 5
+Frontend part of the application.
