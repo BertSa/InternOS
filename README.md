@@ -1,4 +1,5 @@
-# InternOs
+# InternOS [![Tests Coverage](https://github.com/BertSa/InternOS/actions/workflows/tests.yml/badge.svg)](https://github.com/BertSa/InternOS/actions/workflows/tests.yml)
+
 
 Système de gestion de stages pour les étudiants du cégep.
 
